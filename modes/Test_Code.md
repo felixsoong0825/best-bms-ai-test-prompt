@@ -55,18 +55,18 @@
     * 资源文件命名为"Resource.robot"，关键字、配置量公共内容应当放入资源文件  
 
 2. 常用关键字：  
-| 关键字名 | 用途 |
-| -- | -- |
-| KeyOn | 上电/唤醒, SIL环境不支持唤醒 |
-| Set Parameters <TX变量1=值> <TX变量1=值> | 设置<TX变量> |
-| If_all_of_the_Results_are_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 判断<RX变量>满足, 时间/周期为数值非公式，判断条件仅能使用<=,>=,!=,=,>,<符号, 支持直接链式不等式 |
-| If_all_of_the_Results_always_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 	判断<RX变量>持续满足 |
-| If_all_of_the_Results_always_not_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 判断<RX变量>持续不满足 |
-| Wait <时间(s)> | 等待<时间(s)> |
-| ${Name}= Get Parameters <RX变量> | 获取<RX变量>, 返回值为list，需要用${Name}[0]索引取值 |
-| ${Dim}= Get Length ${Parameters} | 获取变量长度, 返回值为list |
-| The_Current_DTCs_are `0x<XXXXXX>` | 当前的DTC, SIL环境不支持测试DTC |
-| The_History_DTCs_are `0x<XXXXXX>` | 历史的DTC, SIL环境不支持测试DTC |
+    | 关键字名 | 用途 |
+    | --- | --- |
+    | KeyOn | 上电/唤醒, SIL环境不支持唤醒 |
+    | Set Parameters <TX变量1=值> <TX变量1=值> | 设置<TX变量> |
+    | If_all_of_the_Results_are_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 判断<RX变量>满足, 时间/周期为数值非公式，判断条件仅能使用<=,>=,!=,=,>,<符号, 支持直接链式不等式 |
+    | If_all_of_the_Results_always_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 	判断<RX变量>持续满足 |
+    | If_all_of_the_Results_always_not_met <时间(s)> <周期(s)> <RX变量1判断条件> <RX变量2判断条件>... | 判断<RX变量>持续不满足 |
+    | Wait <时间(s)> | 等待<时间(s)> |
+    | ${Name}= Get Parameters <RX变量> | 获取<RX变量>, 返回值为list，需要用${Name}[0]索引取值 |
+    | ${Dim}= Get Length ${Parameters} | 获取变量长度, 返回值为list |
+    | The_Current_DTCs_are `0x<XXXXXX>` | 当前的DTC, SIL环境不支持测试DTC |
+    | The_History_DTCs_are `0x<XXXXXX>` | 历史的DTC, SIL环境不支持测试DTC |
  
 3. 测试套件模板： 
     ```
